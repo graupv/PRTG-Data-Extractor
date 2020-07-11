@@ -3,5 +3,7 @@
 /build
 /env
 /*.log
+/*.csv
 /__pycache__
+/*.rst
 ssl_tests.py

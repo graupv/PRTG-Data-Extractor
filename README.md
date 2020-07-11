@@ -36,6 +36,9 @@ All fields are required
 3. Set Date periods or specific live data request parameters.
 4. Optionally set resulting file location (Default desktop)
 If the directory doesn't exist it will try to create the folder.
+
+### ./myPath/PRTG API Requests/CSV Merge
+
 5. **Get**
 
 ![main](imgs/main.png)
