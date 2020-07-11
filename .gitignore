@@ -9,3 +9,4 @@
 *.rst
 ssl_tests.py
 qd.rst
+setup.py
