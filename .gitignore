@@ -4,6 +4,7 @@
 /env
 /*.log
 *.csv
+/*.csv
 /__pycache__
 *.rst
 ssl_tests.py
