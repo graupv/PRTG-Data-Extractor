@@ -116,7 +116,7 @@ class Notification(Toplevel):
         Toplevel.__init__(self)
         self.title(title)
         self.title_name = title
-        self.iconbitmap('prtg_active.ico')
+        self.iconbitmap('imgs\prtg_active.ico')
         x = self.winfo_screenheight() / 2
         y = self.winfo_screenheight() / 2
         self.geometry('%dx%d+%d+%d' % (w, h, x - (w / 2), y - (h / 2)))
@@ -132,7 +132,7 @@ class Window(Toplevel):
         Toplevel.__init__(self)        
         self.title(title)
         self.title_name = title
-        self.iconbitmap('prtg_active.ico')
+        self.iconbitmap('imgs\prtg_active.ico')
         x = self.winfo_screenheight() / 2
         y = self.winfo_screenheight() / 2
         self.geometry('%dx%d+%d+%d' % (w, h, x - (w /2), y - (h / 2)))
@@ -1089,7 +1089,7 @@ class App:
         self.search_top = Toplevel()
         self.search_top.title('Search')
         self.search_top.minsize(600, 400)
-        self.search_top.iconbitmap('prtg_active.ico')
+        self.search_top.iconbitmap('imgs\prtg_active.ico')
         sew = 50
         #   search entry width lol
         cbc = 9
@@ -1250,7 +1250,7 @@ class App:
         x = (self.scx / 2) - (150 / 2)
         y = (self.scy / 2) - (125 / 2)
         self.notWindow.geometry('%dx%d+%d+%d' % (150, 125, x, y))
-        self.notWindow.iconbitmap('prtg_active.ico')
+        self.notWindow.iconbitmap('imgs\prtg_active.ico')
         self.notWindow.title('Adding ID\'s')
         Message(self.notWindow, text='Added search results!', justify=CENTER, width=95).grid(padx=5, pady=5, row=1, column=0, columnspan=15, sticky=W + E)
         self.is_k = Button(self.notWindow, text='Ok', width=10, command=self.is_kill)
@@ -1272,7 +1272,7 @@ class App:
         x = (self.scx / 2) - (150 / 2)
         y = (self.scy / 2) - (125 / 2)
         self.notWindow.geometry('%dx%d+%d+%d' % (150, 125, x, y))
-        self.notWindow.iconbitmap('prtg_active.ico')
+        self.notWindow.iconbitmap('imgs\prtg_active.ico')
         self.notWindow.title('Adding ID\'s')
         Message(self.notWindow, text='Added selected results!\n' + str(len(self.search_ids)) + ' sensors.',
                 justify=CENTER, width=95).grid(padx=5, pady=5, row=1, column=0, columnspan=15, sticky=W + E)
@@ -1297,13 +1297,13 @@ class App:
 #   End of Search engine
     def mng_error(self, exception):
         #   receive an exception message and display it.
-        logger.info('Error prompted: ' + exception)
+        logger.info('Error prompted: ' + str(exception))
         errorWindow = Toplevel()
         x = (self.scx / 2) - (250 / 2)
         y = (self.scy / 2) - (175 / 2)
         errorWindow.minsize(250, 175)
         errorWindow.geometry('%dx%d+%d+%d' % (250, 175, x, y))
-        errorWindow.iconbitmap('prtg_active.ico')
+        errorWindow.iconbitmap('imgs\prtg_active.ico')
         errorWindow.title('Error!')
         Message(errorWindow, text=exception, justify=CENTER, width=100).grid(row=1, columnspan=5, sticky=W + E)
         Button(errorWindow, text='Ok', command=errorWindow.destroy, width=8).grid(row=10, sticky=S)
@@ -1313,7 +1313,7 @@ class App:
         self.queue_top = Toplevel()
         self.queue_top.title('Requests')
         self.queue_top.minsize(185, 165)
-        self.queue_top.iconbitmap('prtg_active.ico')
+        self.queue_top.iconbitmap('imgs\prtg_active.ico')
         x = (self.scx / 2) - (175 / 2)
         y = (self.scy / 2) - (150 / 2)
         self.queue_top.geometry('%dx%d+%d+%d' % (175, 150, x, y))
@@ -1658,7 +1658,7 @@ class App:
             t = Toplevel()
             t.pack_propagate(0)
             t.minsize(125, 125)
-            t.iconbitmap('prtg_active.ico')
+            t.iconbitmap('imgs\prtg_active.ico')
             t.title('Get')
             x = (self.scx / 2) - (125 / 2)
             y = (self.scy / 2) - (125 / 2)
@@ -1874,7 +1874,7 @@ class App:
                 self.tp = Toplevel()
                 self.sso = 1
                 self.tp.title('Settings')
-                self.tp.iconbitmap('prtg_active.ico')
+                self.tp.iconbitmap('imgs\prtg_active.ico')
                 self.tp.minsize(270, 275)
                 x = (self.scx / 2) - (245 / 2)
                 y = (self.scy / 2) - (275 / 2)
@@ -1925,7 +1925,7 @@ class App:
                 self.tp.destroy()
                 t2 = Toplevel()
                 t2.title('Successful')
-                t2.iconbitmap('prtg_active.ico')
+                t2.iconbitmap('imgs\prtg_active.ico')
                 t2.minsize(125, 125)
                 x = (self.scx / 2) - (125 / 2)
                 y = (self.scy / 2) - (125 / 2)
@@ -2043,7 +2043,7 @@ if __name__ == '__main__':
 
     root.title('PRTG API')
     root.minsize(485, 590)  # for now.
-    root.iconbitmap('prtg_active.ico')
+    root.iconbitmap('imgs\prtg_active.ico')
     x = (root.winfo_screenwidth() / 2) - (430 / 2)
     y = (root.winfo_screenheight()/ 2) - (555 / 2)
     # root.geometry('%dx%d+%d+%d' % (450, 575, x, y))

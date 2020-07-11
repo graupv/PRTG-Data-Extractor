@@ -14,7 +14,7 @@ build_exe_options = {
     'include_files': [
         os.path.join(PYTHON_INSTALL_DIR, 'DLLs', 'tk86t.dll'),
         os.path.join(PYTHON_INSTALL_DIR, 'DLLs', 'tcl86t.dll'),
-        'prtg_active.ico', 'PRTG_Logo-Start.ico', 'README.md',
+        'imgs\prtg_active.ico', 'imgs\PRTG_Logo-Start.ico', 'README.md',
     ],
     'optimize': '2',
 }
@@ -24,11 +24,11 @@ if sys.platform == "win32":
   base = "Win32GUI"
 
 setup(
-    name='PRTG API Access',
+    name='PRTG API Data Access',
     version='0.1.2',
     options={'build_exe': build_exe_options},
     executables=[Executable('PRTG API.py', base=base, shortcutName="PRTG API Access", shortcutDir="DesktopFolder", icon='prtg_active.ico')],
     author='Gerardo Pineda',
-    author_email='gerapv92@gmail.com',
+    author_email=['gerapv92@gmail.com', 'graupvz@gmail.com']
     description='PRTG API Data Extractor'
 )

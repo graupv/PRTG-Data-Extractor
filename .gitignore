@@ -1,5 +1,7 @@
 /back.py
+/ssl_tests.py
 /build
 /env
-/info.log
+/*.log
 /__pycache__
+ssl_tests.py

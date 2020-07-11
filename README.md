@@ -1,4 +1,4 @@
-**PRTG API Data Extractor**
+# **PRTG API Data Extractor**
 
 Extract historical or live data from PRTG server, in either CSV, JSON or XML. 
 Merges CSV's into single file for simple parsing. Import csv with IDs to 
@@ -6,6 +6,17 @@ retrieve or use built in Search functionality (tags, groups, type, sensor name,
  probe or device) to narrow down IDs.
 
 ---
+
+## Requirements
+
+    Python >= 3.6
+    - Pandas
+    - Numpy
+    - Requests
+    - Standard library
+
+    - A PRTG Environment
+
 ##	Set Credentials
 
 1. PRTG Admin username & password
