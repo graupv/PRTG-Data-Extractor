@@ -19,10 +19,12 @@ retrieve or use built in Search functionality (tags, groups, type, sensor name,
 
 ##	Set Credentials
 
-1. PRTG Admin username & password
+1. File > Server Settings > PRTG Admin username & password
 2. PRTG Server IP
 3. Add port
 4. Check for SSL if necessary.  
+
+All fields are required
 
 ![ServerSettings](imgs/serverSettings.png "Settings")
 
@@ -33,6 +35,7 @@ retrieve or use built in Search functionality (tags, groups, type, sensor name,
 2. Input ID's, manually, import CSV or Search.
 3. Set Date periods or specific live data request parameters.
 4. Optionally set resulting file location (Default desktop)
+If the directory doesn't exist it will try to create the folder.
 5. **Get**
 
 ![main](imgs/main.png)
@@ -48,3 +51,11 @@ retrieve or use built in Search functionality (tags, groups, type, sensor name,
 ![search2](imgs/search2.png)
 
 3. Select specific rows or include all search results
+
+## Results
+
+1. Request progress and result window
+![main](imgs/res1.png)
+
+2. Merged filed with a catalog/list of the 2. sensors queried.
+![main](imgs/res2.png)
