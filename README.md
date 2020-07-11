@@ -24,6 +24,8 @@ retrieve or use built in Search functionality (tags, groups, type, sensor name,
 3. Add port
 4. Check for SSL if necessary.  
 
+![ServerSettings](imgs/serverSettings.png "Settings")
+
 
 ##	General Steps
 
@@ -33,4 +35,16 @@ retrieve or use built in Search functionality (tags, groups, type, sensor name,
 4. Optionally set resulting file location (Default desktop)
 5. **Get**
 
+![main](imgs/main.png)
 ---
+
+## Search
+
+1. Empty returns all sensors
+ ![search1](imgs/search1.png)
+
+2. Search tags, name, type group or probe
+
+![search2](imgs/search2.png)
+
+3. Select specific rows or include all search results
