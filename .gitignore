@@ -3,7 +3,8 @@
 /build
 /env
 /*.log
-/*.csv
+*.csv
 /__pycache__
-/*.rst
+*.rst
 ssl_tests.py
+qd.rst
